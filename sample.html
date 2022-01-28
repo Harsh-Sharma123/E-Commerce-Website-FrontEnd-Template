@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background: #E3E6F3;
+            padding: 20px 10px;box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+        .nav{
+            margin: 10px;
+            display: flex;
+        }
+        .nav li{
+            list-style: none;
+            position: relative;
+        }
+        .nav li a{
+            margin: 10px;
+            text-decoration: none;
+        }
+        .nav .active{
+            color: white;
+        }
+        .nav li a:hover::after,
+        .nav li a.active::after{
+            content: "";
+            background-color: white;
+            width: 50%;
+            height: 3px;
+            position: absolute;
+            bottom: -4px;
+            left: 10px;
+        }
+        .home{
+            height: 90vh;
+            
+            background: url("./img/hero4.png");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;padding: 0px 80px;
+            
+        }
+
+        .feature{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .section-p1{
+            
+            margin: 40px 80px;
+        }
+
+        .fe-box{
+            width: 188px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.02);
+            padding: 10px;
+            margin: 15px 0;
+            border: 1px solid #ccfeda;
+            cursor: pointer;
+        }
+
+        .fe-box img{
+            width: 100%;
+            margin: 10px;
+        }
+
+        .fe-box:hover{
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.06);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <section class="header">
+        <img src="./img/logo.png" alt="">
+        <div >
+            <ul class="nav">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="home">
+        <h4>Trade-in-Offer</h4>
+        <h2>Super Value Deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="feature section-p1">
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h4>Free Shipping</h4>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h4>Free Shipping</h4>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h4>Free Shipping</h4>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h4>Free Shipping</h4>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h4>Free Shipping</h4>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h4>Free Shipping</h4>
+        </div>
+    </section>
+    
+</body>
+</html>
